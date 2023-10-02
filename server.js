@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/" , (req,res) => {
-    res.json({ message : "Welocome to manage account bro!!"})
+    res.json({ message : "Hello world"})
 })
 require("./app/routes/user.routes")(app);
 require("./app/routes/file.routes")(app);
